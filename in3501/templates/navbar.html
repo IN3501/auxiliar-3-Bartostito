@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">IN3501</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <!-- Just an image -->
+<nav class="navbar navbar-dark bg-danger">
+  <a class="navbar-brand" href="#">
+    <img src="https://i.pinimg.com/originals/ae/12/6c/ae126cda4cb85b9015ee4e51330a2b94.jpg" width="70" height="50" alt="">
+  </a>
+</nav>
+    <a class="navbar-brand" href="#"> IN3501  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,9 +18,12 @@
           <a class="nav-link" href="{% url 'index' %}">Inicio</a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" href="{% url 'Formulario' %}">Formulario</a>
+        </li>
+        <li class="nav-item active">
           <a class="nav-link" href="{% url 'inputs' %}">Inputs</a>
         </li>
-
+        
       </ul>
     </div>
   </nav>
